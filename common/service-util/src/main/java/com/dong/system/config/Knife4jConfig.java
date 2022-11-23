@@ -21,6 +21,8 @@ import java.util.List;
 
 /**
  * knife4j配置信息
+ * 测试地址:http://localhost:8800/doc.html#/home
+ *
  */
 @Configuration
 @EnableSwagger2WebMvc
