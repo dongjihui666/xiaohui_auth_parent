@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -20,7 +21,7 @@
       <module name="model" options="-parameters" />
       <module name="service-system" options="-parameters" />
       <module name="service-util" options="-parameters" />
-      <module name="xiaohui_auth_parent" options="-parameters" />
+      <module name="xiaohui_auth_parent" options="" />
     </option>
   </component>
 </project>
