@@ -20,7 +20,7 @@
       <module name="model" options="-parameters" />
       <module name="service-system" options="-parameters" />
       <module name="service-util" options="-parameters" />
-      <module name="xiaohui_auth_parent" options="-parameters" />
+      <module name="xiaohui_auth_parent" options="" />
     </option>
   </component>
 </project>

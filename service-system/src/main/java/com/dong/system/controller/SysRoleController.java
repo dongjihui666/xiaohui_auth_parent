@@ -23,7 +23,6 @@ public class SysRoleController {
     // 2 逻辑删除接口
     @DeleteMapping("remove/{id}")
     public boolean removeRole(@PathVariable Long id){
-
         boolean isSuccess = sysRoleService.removeById(id);
         return isSuccess ;
     }
