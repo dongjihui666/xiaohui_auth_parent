@@ -1,5 +1,6 @@
 package com.dong.system.controller;
 
+import com.dong.common.result.Result;
 import com.dong.model.system.SysRole;
 import com.dong.system.service.SysRoleService;
 import io.swagger.annotations.Api;
@@ -20,14 +21,18 @@ public class SysRoleController {
     // 1 查询所有记录
     @ApiOperation(value = "获取全部角色列表")
     @GetMapping("findAll")
-    public List<SysRole> findAll(){
+    public Result<List<SysRole>>  findAll(){
         List<SysRole> list = sysRoleService.list();
-        return list;
+        return Result.ok(list);
     }
     // 2 逻辑删除接口
     @DeleteMapping("remove/{id}")
-    public boolean removeRole(@PathVariable Long id){
+    public Result removeRole(@PathVariable Long id){
         boolean isSuccess = sysRoleService.removeById(id);
-        return isSuccess ;
+        if (isSuccess){
+            return Result.ok() ;
+        }else {
+            return Result.fail("删除失败");
+        }
     }
 }
