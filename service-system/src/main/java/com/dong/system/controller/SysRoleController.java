@@ -88,4 +88,5 @@ public class SysRoleController {
         sysRoleService.removeByIds(idList);
         return Result.ok("删除id成功");
     }
+
 }
